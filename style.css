@@ -1,0 +1,32 @@
+body{
+  font-size: 14px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.payment-method-container {
+  background-color: #7c7979; /* Gris oscuro */
+ 
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Cambiar color de los íconos a blanco y negro */
+.form-check-label img {
+  filter: grayscale(100%) invert(100%);
+  transition: filter 0.3s ease;
+}
+
+/* Cambiar a color normal cuando el icono está seleccionado */
+.form-check-input:checked + .form-check-label img {
+  filter: grayscale(0%) invert(0%);
+}
+
+/* Cambiar color de los íconos al pasar sobre ellos */
+.form-check-label:hover img {
+  filter: grayscale(0%) invert(0%);
+}
